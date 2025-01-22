@@ -59,7 +59,7 @@ body {
 
 .hero * {
     position: relative;
-    z-index: 2; /* Ensure text is above the overlay */
+    z-index: 2; 
 }
 
 .hero-content h1 {
@@ -81,6 +81,7 @@ body {
     font-size: 1rem;
     cursor: pointer;
 }
+
 
 .hero-btn:hover {
     background-color: #388e3c;
