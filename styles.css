@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,12 +6,12 @@ body {
     color: #333;
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4CAF50; /* Green Navbar */
+    background-color: #4CAF50; 
     padding: 10px 20px;
     color: white;
 }
@@ -37,7 +37,6 @@ body {
     text-decoration: underline;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     background: url('studyroom.jpeg') no-repeat center center/cover;
@@ -53,8 +52,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    z-index: 1; /* Overlay goes below the text */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
 }
 
 .hero * {
@@ -82,12 +81,10 @@ body {
     cursor: pointer;
 }
 
-
 .hero-btn:hover {
     background-color: #388e3c;
 }
 
-/* Features Section */
 .features {
     display: flex;
     justify-content: space-around;
@@ -146,7 +143,7 @@ body {
     background-color: #388e3c;
 }
 
-/* Login Page Styles */
+
 .login-container {
     display: flex;
     justify-content: center;
