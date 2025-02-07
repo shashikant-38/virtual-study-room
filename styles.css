@@ -1,11 +1,9 @@
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     color: #333;
 }
-
 
 .navbar {
     display: flex;
@@ -52,13 +50,13 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
-    z-index: 1; 
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .hero * {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 }
 
 .hero-content h1 {
@@ -91,6 +89,7 @@ body {
     padding: 40px 20px;
     background-color: #fff;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .feature {
@@ -107,155 +106,32 @@ body {
     transform: translateY(-10px);
 }
 
-.feature i {
-    font-size: 3rem;
-    color: #4CAF50;
-    margin-bottom: 20px;
-}
-
-.feature h2 {
-    font-size: 1.5rem;
-    color: #333;
-}
-
-.feature p {
-    color: #666;
-}
-
-.feature input {
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+/* Uploaded Documents List */
+#uploaded-docs-list {
+    list-style: none;
+    padding: 0;
     margin-top: 10px;
 }
 
-.feature button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.feature button:hover {
-    background-color: #388e3c;
-}
-
-
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.login-box {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 400px;
-    text-align: center;
-    border: 1px solid #e0e0e0;
-    opacity: 0;
-    animation: fadeIn 2s ease-out forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.welcome-section h2 {
-    color: #4CAF50;
-    font-size: 1.8rem;
-}
-
-.welcome-section p {
-    color: #666;
-}
-
-.input-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-.input-group label {
-    margin-right: 10px;
-    color: #4CAF50;
-}
-
-.input-group input {
-    flex: 1;
-    border: none;
-    background-color: transparent;
+#uploaded-docs-list li {
+    background: #e0f7fa;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 4px;
     color: #333;
-    outline: none;
 }
 
-.input-group input::placeholder {
-    color: #aaa;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* Video Call Styling */
+#video-call-container {
     width: 100%;
+    max-width: 800px;
+    height: 450px;
+    margin-top: 20px;
 }
 
-.btn:hover {
-    background-color: #388e3c;
-}
-
-.extra-links {
-    margin-top: 10px;
-}
-
-.extra-links a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-.extra-links a:hover {
-    text-decoration: underline;
-}
-
-.social-login p {
-    color: #666;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-}
-
-.social-btn {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    margin: 0 5px;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2rem;
-}
-
-.social-btn:hover {
-    background-color: #f1f1f1;
+#video-call-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
 }
