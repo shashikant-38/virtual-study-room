@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4CAF50; 
+    background-color: #4CAF50;
     padding: 10px 20px;
     color: white;
 }
@@ -89,7 +89,6 @@ body {
     padding: 40px 20px;
     background-color: #fff;
     margin-top: 40px;
-    flex-wrap: wrap;
 }
 
 .feature {
@@ -106,32 +105,48 @@ body {
     transform: translateY(-10px);
 }
 
-/* Uploaded Documents List */
-#uploaded-docs-list {
+#uploaded-docs, #search-results {
     list-style: none;
     padding: 0;
     margin-top: 10px;
 }
 
-#uploaded-docs-list li {
-    background: #e0f7fa;
-    padding: 5px;
-    margin: 5px 0;
-    border-radius: 4px;
-    color: #333;
+#uploaded-docs li, #search-results li {
+    padding: 8px;
+    background: #f0f0f0;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-/* Video Call Styling */
+#uploaded-docs li:hover, #search-results li:hover {
+    background: #ddd;
+}
+
+.feature input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.feature button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.feature button:hover {
+    background-color: #388e3c;
+}
+
 #video-call-container {
     width: 100%;
     max-width: 800px;
-    height: 450px;
-    margin-top: 20px;
-}
-
-#video-call-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 8px;
+    margin: 20px auto 0;
 }
