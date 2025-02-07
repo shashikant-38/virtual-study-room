@@ -19,6 +19,7 @@
       </ul>
     </nav>
   </header>
+
   <main>
     <section class="hero">
       <div class="hero-content">
@@ -27,23 +28,29 @@
         <button class="hero-btn">Get Started</button>
       </div>
     </section>
+
     <section class="features">
       <div class="feature">
-        <h2>Search</h2>
-        <input type="text" id="search-doc" placeholder="Search for documents...">
-        <ul class="search-results"></ul>
-      </div>
-      <div class="feature">
-        <h2>Upload</h2>
+        <h2>Upload Documents</h2>
         <input type="file" id="upload-file">
         <p>Upload your study materials and share them with others.</p>
+        <ul id="uploaded-docs-list"></ul> <!-- Display uploaded documents -->
       </div>
+
       <div class="feature">
+        <h2>Search Documents</h2>
+        <input type="text" id="search-doc" placeholder="Search uploaded documents...">
+        <ul class="search-results"></ul>
+      </div>
+
+      <div class="feature video-call-section">
         <h2>Video Call</h2>
         <button class="btn start-call-btn">Start Video Call</button>
+        <div id="video-call-container"></div> <!-- Responsive iframe container -->
       </div>
     </section>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
